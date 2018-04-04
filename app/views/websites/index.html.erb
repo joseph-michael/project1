@@ -1,0 +1,5 @@
+
+<% @websites.each do |website| %>
+  <!-- <%= image_tag website.image, :alt => website.title, :class => 'thumb' %> -->
+  <%= link_to website.title, website, :class => 'websiteIndex' %>
+<% end %>

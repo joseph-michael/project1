@@ -1,0 +1,12 @@
+<h1><%= @website.title %></h1>
+
+<p><%= @website.description %></p>
+
+<% unless @website.image.blank?  %>
+<%= image_tag @website.image, :alt => @website.title, :class => 'feature' %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Edit website', edit_website_path(@website) %>
+  <%= link_to 'Delete website', @website, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>
