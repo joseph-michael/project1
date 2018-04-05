@@ -8,24 +8,29 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="<%= params[:action] %>">
     <nav>
-      <%= link_to 'Home', root_path %>
+      <%= link_to 'markker', root_path, :class => 'leftFlex' %>
 
       <% if user_signed_in? %>
         <%= link_to 'Add Website', new_website_path %>
+        <%= link_to 'Explore', explore_path %>
         <%= link_to "Logout", destroy_user_session_path, method: :delete  %>
       <% else %>
 
         <%= link_to('Login', new_user_session_path)  %>
       <% end %>
-      
+
       <% unless user_signed_in? %>
       <%= link_to "Signup", new_user_registration_path%>
       <% end %>
     </nav>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+    <main>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </main>
+
   </body>
 </html>

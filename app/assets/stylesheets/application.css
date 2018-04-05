@@ -13,3 +13,82 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+body.new {
+    background: url(/assets/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  padding: 1em;
+  color: black;
+}
+
+nav a:hover {
+  color: tomato;
+}
+
+.leftFlex {
+  margin-right: auto;
+  font-weight: bold;
+}
+
+main {
+  width: 97%;
+  margin: 0 auto;
+}
+
+/* sign in  */
+
+.signin_box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5em;
+  background: white;
+}
+
+
+#user_email, #user_password  {
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+
+}
+
+
+.actions input[type=submit] {
+    margin-top: 2em;
+    width: 100%;
+    border: 2px solid black;
+    padding: 2rem;
+    color: white;
+    background: black;
+  }

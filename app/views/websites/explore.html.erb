@@ -1,12 +1,12 @@
 
 <section class="userHeader">
-  <h2 class="red">My Bookmarks.</h2>
+  <h2 class="red">Explore The Latest Bookmarks</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
 </section>
 
 
 <div class="image_gallery">
-<% current_user.websites.each do |website| %>
+<% @websites.each do |website| %>
 <div class="bookmark_img">
   <%= link_to image_tag(website.image, :class => 'thumb', :alt => website.title), website %>
 </div>

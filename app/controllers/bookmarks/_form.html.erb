@@ -1,0 +1,14 @@
+<%= form_for @bookmark do |f| %>
+  <%= f.label :title %><br/>
+  <%= f.text_field :title, :required => true %>
+
+<p>
+  <%= f.label :description %><br/>
+  <%= f.text_area :description, :required => true %>
+</p>
+  <%= f.label :image %><br/>
+  <%= f.url_field :image %>
+
+
+  <%= f.submit %>
+<% end %>

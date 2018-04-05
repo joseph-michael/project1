@@ -6,17 +6,28 @@ class WebsitesController < ApplicationController
 
   def new
     @website = Website.new
+
   end
 
   def create
-    # verify it link already exists. if extists take existing website_id and current user_id write to user_bookmarks
-    
+    # verify it link already exists. if extists take existing website_id and current user_id write to user_webistes
+    # @user.id = (user_id:current_user.id)
+
     website = Website.create website_params
-    redirect_to website # /artists/:some_id i.e. the show page
+    if website.save
+      current_user.websites << website
+      redirect_to website_path(website.id)
+
+    else
+      redirect_to root_path
+    end
+
+    # redirect_to website # /artists/:some_id i.e. the show page
   end
 
   def edit
     @website = Website.find params[:id]
+
   end
 
   def update
@@ -32,7 +43,11 @@ class WebsitesController < ApplicationController
   def destroy
     website = Website.find params[:id]
     website.destroy
-    redirect_to artists_path
+    redirect_to websites_path
+  end
+
+  def explore
+    @websites = Website.all
   end
 
   # Strong params: a whitelist of permitted fields
