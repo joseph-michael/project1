@@ -1,24 +1,51 @@
-# README
+#Readme
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Markker
 
-Things you may want to cover:
+A bookmarking website where you can add websites to you own private list and also explore all the bookmarks added in the database.
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+Sign up and login via https://ga-project1-jo.herokuapp.com/users/sign_in.
 
-* Configuration
+The home page is an image gallery of all the websites you have added to your bookmarks.
 
-* Database creation
+Click 'Add website' navigation link to add a new website to your bookmark gallery.
 
-* Database initialization
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+Web browser.
 
-* Deployment instructions
 
-* ...
+### Installing
+
+Code can be used in the browser.
+
+
+## Built With
+
+* [rails 5](http://rubyonrails.org//) - Animation library used
+
+
+## Contributing
+
+
+## Versioning
+
+
+## Forthcoming Features
+
+Automatic screenshot the link http:// so you no longer need to a link to image.
+
+## Authors
+
+* **Joseph Ocampo**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* wdi26
