@@ -16,7 +16,8 @@ class WebsitesController < ApplicationController
     website = Website.create website_params
     if website.save
       current_user.websites << website
-      redirect_to website_path(website.id)
+      redirect_to root_path
+      # redirect_to website_path(website.id)
 
     else
       redirect_to root_path

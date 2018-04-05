@@ -2,6 +2,8 @@
 
 <p><%= @website.description %></p>
 
+<p><%= @website.link %></p>
+
 <% unless @website.image.blank?  %>
 <%= image_tag @website.image, :alt => @website.title, :class => 'feature' %>
 <% end %>
