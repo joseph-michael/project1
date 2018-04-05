@@ -33,6 +33,10 @@ body.new {
     background-repeat: no-repeat;
 }
 
+.alert {
+  text-align: center;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -71,7 +75,7 @@ main {
 }
 
 
-#user_email, #user_password  {
+#user_email, #user_password , #user_password_confirmation    {
   width: 100%;
   display: block;
   outline: none;
