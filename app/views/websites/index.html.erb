@@ -6,7 +6,7 @@
 
 
 <div class="image_gallery">
-<% current_user.websites.each do |website| %>
+<% current_user.websites.reverse.each do |website| %>
 <div class="bookmark_img">
   <%= link_to image_tag(website.image, :class => 'thumb', :alt => website.title), website %>
 </div>
