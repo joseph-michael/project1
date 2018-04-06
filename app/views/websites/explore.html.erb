@@ -6,7 +6,7 @@
 
 <div class="card">
   <div class="image_gallery">
-  <% @websites.each do |website| %>
+  <% @websites.reverse.each do |website| %>
   <div class="bookmark_img">
     <%= link_to image_tag(website.image, :class => 'thumb', :alt => website.title), website %>
   </div>
