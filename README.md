@@ -1,4 +1,3 @@
-#Readme
 
 # Markker
 
@@ -25,7 +24,7 @@ Code can be used in the browser.
 
 ## Built With
 
-* [rails 5](http://rubyonrails.org//) - Animation library used
+* [rails 5](http://rubyonrails.org//)
 
 
 ## Contributing
