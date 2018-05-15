@@ -33,6 +33,10 @@ body.new {
     background-repeat: no-repeat;
 }
 
+.link {
+  color: red;
+}
+
 .alert {
   text-align: center;
 }

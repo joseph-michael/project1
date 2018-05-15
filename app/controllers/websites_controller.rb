@@ -10,7 +10,7 @@ class WebsitesController < ApplicationController
   end
 
   def create
-    # verify it link already exists. if extists take existing website_id and current user_id write to user_webistes
+    # verify if link already exists. if extists take existing website_id and current user_id write to user_websites
     # @user.id = (user_id:current_user.id)
 
     website = Website.create website_params
@@ -38,8 +38,18 @@ class WebsitesController < ApplicationController
   end
 
   def show
+    @websites = Website.all
     @website = Website.find params[:id]
+
   end
+
+  def add
+    @websites = Website.all
+    @website = Website.find params[:id]
+    current_user.websites << @website
+    redirect_to root_path
+  end
+
 
   def destroy
     website = Website.find params[:id]

@@ -1,14 +1,14 @@
 
 <section class="userHeader">
   <h2 class="red">My Bookmarks.</h2>
-  <p>Scroll your current bookmarks. A live collection of the most recently added bookmarks to your bookmarks homepage. Have a look through here to see your latest bookmarks or click the image to edit or delete a website from your bookmarks.</p>
+  <p>Live collection of your most recently added bookmarks. Click Add Website to add more websites to your list</p>
 </section>
 
 
 <div class="image_gallery">
 <% current_user.websites.reverse.each do |website| %>
 <div class="bookmark_img">
-  <%= link_to image_tag(website.image, :class => 'thumb', :alt => website.title), website %>
+  <%= link_to image_tag("//image.thum.io/get/width/900/crop/700/#{website.link}", :class => 'thumb', :alt => website.title), website %>
 </div>
 <% end %>
 </div>

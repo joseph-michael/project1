@@ -1,14 +1,33 @@
-<h1><%= @website.title %></h1>
 
-<p><%= @website.description %></p>
 
-<p><%= @website.link %></p>
+<div class="show-container">
+  <h1><%= @website.title %></h1>
 
-<% unless @website.image.blank?  %>
-<%= image_tag @website.image, :alt => @website.title, :class => 'feature' %>
-<% end %>
+  <% unless @website.image.blank?  %>
 
-<div class="controls">
-  <%= link_to 'Edit website', edit_website_path(@website) %>
-  <%= link_to 'Delete website', @website, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+    <%= image_tag "//image.thum.io/get/width/900/crop/700/#{@website.link}", :alt => @website.title, :class => 'thumb' %>
+
+  <% end %>
+
+  <p><%= @website.description %></p>
+  <p>visit: <%= link_to @website.link, @website.link, target: :_blank, :class => 'link' %></p>
+
+
+
+
+
+  <div class="controls">
+    <% if current_user.websites.include?(@website) %>
+      <%= link_to 'Edit website', edit_website_path(@website), :class => '' %>
+      <%= link_to 'Delete website', @website, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+
+      <% else %>
+
+    <% end %>
+
+
+  </div>
+
+
+
 </div>
