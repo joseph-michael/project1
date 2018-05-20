@@ -17,7 +17,7 @@
 
 
   <div class="controls">
-    <% if current_user.websites.include?(@website) %>
+    <% if !current_user.websites.include?(@website) %>
       <%= link_to 'Edit website', edit_website_path(@website), :class => '' %>
       <%= link_to 'Delete website', @website, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
 
