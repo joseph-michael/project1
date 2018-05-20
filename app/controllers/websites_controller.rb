@@ -43,12 +43,12 @@ class WebsitesController < ApplicationController
 
   end
 
-  def add
-    @websites = Website.all
-    @website = Website.find params[:id]
-    current_user.websites << @website
-    redirect_to root_path
-  end
+  # def add
+  #   @websites = Website.all
+  #   @website = Website.find params[:id]
+  #   current_user.websites << @website
+  #   redirect_to root_path
+  # end
 
 
   def destroy

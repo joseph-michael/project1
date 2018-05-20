@@ -26,11 +26,22 @@ body {
 }
 
 body.new {
-    background: url(http://res.cloudinary.com/josephmichael/image/upload/v1522929956/bg7.jpg);
+    /* background: url(http://res.cloudinary.com/josephmichael/image/upload/v1522929956/bg7.jpg); */
+    background: url(http://res.cloudinary.com/josephmichael/image/upload/v1526379995/3.jpg);
     background-size: cover;
     height: 100vh;
     background-position: top;
     background-repeat: no-repeat;
+    animation-name: background-scroll;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes background-scroll {
+    0%  {background-position: 0 0;}
+    100% {background-position: 0 100%;}
 }
 
 .link {
