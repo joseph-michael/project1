@@ -3,11 +3,11 @@
 <div class="show-container">
   <h1><%= @website.title %></h1>
 
-  <!-- <% unless @website.image.blank?  %> -->
+
 
     <%= image_tag "//image.thum.io/get/width/900/crop/700/#{@website.link}", :alt => @website.title, :class => 'thumb' %>
 
-  <!-- <% end %> -->
+
 
   <p><%= @website.description %></p>
   <p>visit: <%= link_to @website.link, @website.link, target: :_blank, :class => 'link' %></p>
