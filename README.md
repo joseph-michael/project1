@@ -5,7 +5,7 @@ A bookmarking website where you can add websites to you own private list and als
 
 ## Getting Started
 
-Sign up and login via https://ga-project1-jo.herokuapp.com/users/sign_in.
+Sign up and login via https://markker.herokuapp.com/users/sign_in.
 
 The home page is an image gallery of all the websites you have added to your bookmarks.
 
