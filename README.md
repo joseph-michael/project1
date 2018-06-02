@@ -5,21 +5,13 @@ A bookmarking website where you can add websites to you own private list and als
 
 ## Getting Started
 
-Sign up and login via https://ga-project1-jo.herokuapp.com/users/sign_in.
+Sign up and login via https://markker.herokuapp.com/users/sign_in.
 
 The home page is an image gallery of all the websites you have added to your bookmarks.
 
 Click 'Add website' navigation link to add a new website to your bookmark gallery.
 
-
-### Prerequisites
-
-Web browser.
-
-
-### Installing
-
-Code can be used in the browser.
+Paste link to website and a screenshot will automatically be taken of the website and you will be redirected to your updated list.
 
 
 ## Built With
@@ -27,15 +19,6 @@ Code can be used in the browser.
 * [rails 5](http://rubyonrails.org//)
 
 
-## Contributing
-
-
-## Versioning
-
-
-## Forthcoming Features
-
-Automatic screenshot the link http:// so you no longer need to a link to image.
 
 ## Authors
 
